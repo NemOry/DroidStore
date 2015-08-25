@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+
+<qnx xmlns="http://www.qnx.com/schemas/application/1.0">
+
+	<env var="CASCADES_THEME" value="bright"/>
+
+    <id>com.crackberry.cheerstore</id>
+    <name>Cheer Store</name>
+    <versionNumber>1.0.0</versionNumber>
+    <buildId>1</buildId>
+    <description>The Cheer Store Application</description>
+    <author>Anonymous</author>
+    <splashScreens>
+       <image>720x1280.png</image>
+       <image>720x720.png</image>
+       <image>768x1280.png</image>
+    </splashScreens>
+    <icon>
+       <image>icon-96x96.png</image>
+       <image>icon-114x114.png</image>
+    </icon>
+    
+    <configuration name="Device-Debug">
+       <platformArchitecture>armle-v7</platformArchitecture>
+       <asset path="arm/o.le-v7-g/DroidStore" entry="true" type="Qnx/Elf">DroidStore</asset>
+       <asset path="C:/Flurry/Flurry/armle-v7/libFlurry.a" type="Qnx/Elf">lib/libFlurry.a</asset>
+    </configuration>
+    <configuration name="Device-Release">
+       <entryPointType>Qnx/Cascades</entryPointType>
+       <platformArchitecture>armle-v7</platformArchitecture>
+       <asset path="arm/o.le-v7/DroidStore.so" entry="true" type="Qnx/Elf">DroidStore.so</asset>
+       <asset path="C:/Flurry/Flurry/armle-v7/libFlurry.a" type="Qnx/Elf">lib/libFlurry.a</asset>
+    </configuration>
+    <configuration name="Device-Profile">
+       <platformArchitecture>armle-v7</platformArchitecture>
+       <asset path="arm-p/o.le-v7-g/DroidStore" entry="true" type="Qnx/Elf">DroidStore</asset>
+       <asset path="C:/Flurry/Flurry/armle-v7/libFlurry.a" type="Qnx/Elf">lib/libFlurry.a</asset>
+    </configuration>
+    <configuration name="Simulator-Debug">
+       <platformArchitecture>x86</platformArchitecture>
+       <asset path="x86/o-g/DroidStore" entry="true" type="Qnx/Elf">DroidStore</asset>
+       <asset path="C:/Flurry/Flurry/x86/libFlurry.a" type="Qnx/Elf">lib/libFlurry.a</asset>
+    </configuration>
+
+    <initialWindow>
+        <autoOrients>true</autoOrients>
+        <systemChrome>none</systemChrome>
+        <transparent>false</transparent>
+    </initialWindow>
+
+
+    <asset path="assets">assets</asset>
+
+    <asset path="translations" dest="qm">
+        <include name="*.qm"/>
+    </asset>
+    <asset path="assets/images/splashZ10.jpg">splashZ10.jpg</asset>
+    <asset path="assets/images/icon.png">icon.png</asset>
+    <asset path="assets/images/splashQ10.jpg">splashQ10.jpg</asset>
+    <asset path="assets/images/splashZ30.jpg">splashZ30.jpg</asset>
+    <asset path="assets/images/cheers-app-icon.png">cheers-app-icon.png</asset>
+    <asset path="assets/icon-96x96.png">icon-96x96.png</asset>
+    <asset path="assets/icon-114x114.png">icon-114x114.png</asset>
+    <asset path="assets/720x1280.png">720x1280.png</asset>
+    <asset path="assets/720x720.png">720x720.png</asset>
+    <asset path="assets/768x1280.png">768x1280.png</asset>
+
+    <permission system="true">run_native</permission>
+    <permission>access_shared</permission>
+    <permission>access_internet</permission>
+    <permission>run_when_backgrounded</permission>
+    <permission>read_device_identifying_information</permission>
+    <permission>access_location_services</permission>
+    <env var="LD_LIBRARY_PATH" value="app/native/lib:/usr/lib/qt4/lib"/>
+
+</qnx>

@@ -1,0 +1,34 @@
+<model>
+  <item title="All Applications" />
+  <item title="All Games" />
+  <item title="Books and References" />
+  <item title="Business" />
+  <item title="Comics" />
+  <item title="Communication" />
+  <item title="Education" />
+  <item title="Entertainment" />
+  <item title="Finance" />
+  <item title="Health and Fitness" />
+  <item title="Lifestyle" />
+  <item title="Media and Video" />
+  <item title="Medical" />
+  <item title="Music and Audio" />
+  <item title="News and Magazines" />
+  <item title="Personalization" />
+  <item title="Photography" />
+  <item title="Productivity" />
+  <item title="Shopping" />
+  <item title="Social" />
+  <item title="Sports" />
+  <item title="Tools" />
+  <item title="Transportation" />
+  <item title="Travel and Local" />
+  <item title="Weather" />
+  <item title="Libraries and Demo" />
+  <item title="Arcade and Action" />
+  <item title="Brain and Puzzle" />
+  <item title="Cards and Casino" />
+  <item title="Casual" />
+  <item title="Racing" />
+  <item title="Sports Games" />
+</model>

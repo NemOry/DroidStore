@@ -1,0 +1,11 @@
+eclipse.preferences.version=1
+white-list.Globals=
+white-list.QTimer=
+white-list.XMLHttpRequest=
+white-list._droidStoreAPI=
+white-list.coImages=
+white-list.coRootCarousel=
+white-list.coTouchHandler=
+white-list.my.library=
+white-list.navigationPane=
+white-list.root=
